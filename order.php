@@ -86,7 +86,6 @@ Unit Price: '.$row['unit_price'].'<br>
 
         $statement = $pdo->prepare("INSERT INTO tbl_customer_message (subject,message,order_detail,cust_id) VALUES (?,?,?,?)");
         $statement->execute(array($subject_text,$message_text,$order_detail,$_POST['cust_id']));
-
         // sending email
         $to_customer = $cust_email;
         $message = '
