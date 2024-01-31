@@ -250,7 +250,7 @@ if($success_message != '') {
                                     ?>
                                     <a href="order-change-status.php?id=<?php echo $row['id']; ?>&task=Completed" class="btn btn-success btn-xs" style="width:100%;margin-bottom:4px;">Mark Complete</a>
                                     <?php
-                                }
+        			 }
                             ?>
                         </td>
                         <td>
