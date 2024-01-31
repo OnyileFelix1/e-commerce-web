@@ -1,5 +1,4 @@
 <?php require_once('header.php'); ?>
-
 <?php
 $error_message = '';
 if(isset($_POST['form1'])) {
