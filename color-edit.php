@@ -24,8 +24,7 @@ if(isset($_POST['form1'])) {
     		$valid = 0;
         	$error_message .= 'Color name already exists<br>';
     	}
-    }
-
+    
     if($valid == 1) {    	
 		// updating into the database
 		$statement = $pdo->prepare("UPDATE tbl_color SET color_name=? WHERE color_id=?");
