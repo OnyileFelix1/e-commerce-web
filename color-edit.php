@@ -16,6 +16,7 @@ if(isset($_POST['form1'])) {
 		foreach($result as $row) {
 			$current_color_name = $row['color_name'];
 		}
+    }
 
 		$statement = $pdo->prepare("SELECT * FROM tbl_color WHERE color_name=? and color_name!=?");
     	$statement->execute(array($_POST['color_name'],$current_color_name));
