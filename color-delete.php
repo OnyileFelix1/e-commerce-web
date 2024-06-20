@@ -11,7 +11,7 @@ if(!isset($_REQUEST['id'])) {
 	$statement->execute(array($_REQUEST['id']));
 	$total = $statement->rowCount();
 	if( $total == 0 ) {
-		heder('location: logout.php');
+		header('location: logout.php');
 		exit;
 	}
 }
