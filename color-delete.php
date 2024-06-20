@@ -9,7 +9,7 @@ if(!isset($_REQUEST['id'])) {
 	// Check the id is valid or not
 	$statement = $pdo->prepare("SELECT * FROM tbl_color WHERE color_id=?");
 	$statement->execute(array($_REQUEST['id']));
-	$total = $statement->rowCount();
+	$total = $staement->rowCount();
 	if( $total == 0 ) {
 		header('location: logout.php');
 		exit;
