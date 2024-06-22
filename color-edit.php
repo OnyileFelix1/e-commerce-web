@@ -13,7 +13,7 @@ if(isset($_POST['form1'])) {
     	$statement = $pdo->prepare("SELECT * FROM tbl_color WHERE color_id=?");
 		$statement->execute(array($_REQUEST['id']));
 		$result = $statement->fetchAll(PDO::FETCH_ASSOC);
-		foreach($result as $row) {
+		foreach($result a $row) {
 			$current_color_name = $row['color_name'];
 		}
     }
