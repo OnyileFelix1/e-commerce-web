@@ -3,7 +3,7 @@
 <?php
 // Preventing the direct access of this page.
 if(!isset($_REQUEST['id'])) {
-	header('location: logout.ph');
+	header('location: logout.php');
 	exit;
 } else {
 	// Check the id is valid or not
